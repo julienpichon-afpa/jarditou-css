@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Jarditou Contact</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <script src="js/script.js"></script>
+    </head>
+
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <header>
+            <a href="index.html"><img src="src/img/jarditou_logo.jpg" alt="logo" title="logo du site" width="25%"></a>
+            <p>La qualité depuis 70 ans</p>
+            <nav>
+                <ul>
+                    <li><a href="index.html" title="Home">Accueil</a></li>
+                    <li><a href="tableau.html" title="Tableau">Tableau</a></li>
+                    <li><a href="contact.html" title="Page contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section>
+
+            <img src="src/img/promotion.jpg" alt="promo" title="promo" width="100%">
+        
+        <h1>Contact</h1>
+
+        <hr>
+
+        <p><span class="puce">*</span> Ces zones sont obligatoires </p>
+
+        <form action="http://bienvu.net/script.php"  method="post">
+            <fieldset>
+                <legend>Vos coordonnées</legend>
+                <br><label for="nom">Votre nom <span class="puce">*</span> :</label> <input name="nom" type="text" id="nom" pattern="^[a-z]+$" required title="Entrez votre nom (que des caractères entre a et z)" size=25 >
+                <br><label for="prenom">Votre prénom <span class="puce">*</span> :</label> <input name="prenom" type="text" id="prenom" required size=25>
+                <br>
+                <br>Sexe <span class="puce">*</span> : 
+                    <input type="radio" name="sexe" value="Femme" required > Femme 
+                    <input type="radio" name="sexe" value="Homme" required > Homme 
+                <br>
+                <br><label for="date">Date de naissance:</label>
+                    <input type="date" name="ddn" id="date">
+                <br>Code postal <span class="puce">*</span> : <input name="codepostale" type="text" inputmode="numeric" pattern="[0-9]{5}">
+                <br>Adresse : <input name="adresse">
+                <br>Ville : <input name="ville">
+                <br>E-Mail <span class="puce">*</span> : <input name="mail" type="email" placeholder="Votre adresse mail" required size=35>
+                
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Votre demande</legend>
+                <label for="sujet">Sujet <span class="puce">*</span> :</label>
+                    <select id="sujet" name="sujet"  required>
+                        <option value="">Veuillez sélectionner un sujet</option>
+                        <option value="Mes commandes">Mes commandes</option>
+                        <option value="Question sur un produit">Question sur un produit</option>
+                        <option value="Réclamation">Réclamation</option>
+                        <option value="Autres">Autres</option>
+                        </select>
+                    <br><label for="question">Votre question <span class="puce">*</span> : </label>
+                    <textarea id="question" name="question" placeholder="Ecrivez ici." required></textarea>
+            </fieldset>
+            <br><input type="checkbox" name="form-accept" value="accept" required> J'accepte le traitement informatique de ce formulaire <span class="puce">*</span>
+            <br>
+            <br><input type="submit" value="Envoyer" size="25">
+                <input type="reset" value="Reset">
+        </form>
+        </section>
+
+        <hr>               
+
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">Horaires</a></li>
+                    <li><a href="#">Plan du site</a></li>
+                </ul>
+            </nav> 
+        </footer>
+    </body>
+</html>
